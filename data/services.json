@@ -1,0 +1,26 @@
+[
+  {
+    "num": "01",
+    "title": "Machine Learning and Data Science",
+    "desc": "I can leverage ML & DL algorithms and data analysis techniques to derive valuable insights and build predictive models.",
+    "href": "/"
+  },
+  {
+    "num": "02",
+    "title": "Cloud Computing and DevOps",
+    "desc": "I can help you architect scalable and reliable cloud infrastructure, automate deployment processes, and optimize performance.",
+    "href": "/"
+  },
+  {
+    "num": "03",
+    "title": "Backend Development",
+    "desc": "I can help you build robust and scalable backend systems using both Python and NodeJs that power your web and mobile applications.",
+    "href": "/"
+  },
+  {
+    "num": "04",
+    "title": "App Development",
+    "desc": "I can help you build cross-platform mobile applications using Flutter that are fast, responsive, and visually appealing.",
+    "href": "/"
+  }
+]
