@@ -122,7 +122,7 @@ const Work = () => {
                         <Image
                           src={project.image}
                           fill
-                          className="object-cover transition-transform duration-500 group-hover:scale-105 group-hover:shadow-2xl"
+                          className="object-cover transition-transform duration-500"
                           alt=""
                         />
                       </div>
