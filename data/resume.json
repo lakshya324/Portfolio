@@ -1,7 +1,7 @@
 {
   "about": {
     "title": "About Me",
-    "desc": "Computer Science and IT student passionate about backend development and machine learning. With hands-on experience in Python, TypeScript, and AWS, I've developed scalable systems and implemented AI-driven solutions. Currently, I'm a Backend Developer Intern at Dropdown.in, where I enhance system performance and integrate secure payment solutions. Always eager to explore new technologies, I enjoy solving complex problems and delivering impactful results.",
+    "desc": "Computer Science student skilled in backend and AI, building scalable solutions with Python, TypeScript, and AWS.",
     "info": [
       { "key": "Name", "value": "Lakshya Sharma" },
       { "key": "Email", "value": "lakshya.off31@gmail.com" },
@@ -87,17 +87,17 @@
     "desc": "I am pursuing my graduation in B.Tech in Computer Science and Information Technology. Here are some of my educational experiences.",
     "items": [
       {
-        "institute": "AJAY KUMAR GARG ENGINEERING COLLEGE, GHAZIABAD [AKTU]",
+        "institute": "AKGEC, Ghaziabad [AKTU]",
         "degree": "B.Tech in CS&IT",
-        "date": "Nov 2022 - 2026"
+        "date": "2022 - 2026"
       },
       {
-        "institute": "PMS Public School, Moradabad",
+        "institute": "PMS Public School [CBSE]",
         "degree": "Senior Secondary [PCM]",
         "date": "2020 - 2022"
       },
       {
-        "institute": "PMS Public School, Moradabad",
+        "institute": "PMS Public School [CBSE]",
         "degree": "Secondary",
         "date": "2018 - 2020"
       }
@@ -105,7 +105,7 @@
   },
   "skills": {
     "title": "Skills",
-    "desc": "Programming Languages: Python, TypeScript, JavaScript, Dart, C/C++\nFrameworks: Flask, FastAPI, Flutter, Node.js, Express\nCloud and Platforms: Amazon Web Services (AWS), Docker, Kubernetes\nDatabases: MySQL, PostgreSQL, MongoDB, Redis, SQLite, ChromaDB, DynamoDB, AWS RDS\nMachine Learning and Deep Learning: Scikit-learn, TensorFlow, Keras, PyTorch, OpenCV, NLTK, spaCy, LangChain\nTools: Visual Studio Code, Google Colab, Kaggle, Git, GitHub, Postman, etc.",
+    "desc": "Versatile in Python, TypeScript, and Dart. Experienced with AWS, Docker, SQL/NoSQL, and building AI-powered apps using modern frameworks.",
     "items": [
       { "icon": "FaPython", "name": "Python" },
       { "icon": "FaRobot", "name": "Machine Learning" },
@@ -122,20 +122,26 @@
     "desc": "I have achieved various awards, certifications and completed many courses in the field of Machine Learning, Cloud Computing, and Backend Development. Here are some of my certificates.",
     "items": [
       {
+        "date": "June 2025",
+        "title": "Research Paper Publication",
+        "issue": "TMU Journal",
+        "link": "https://www.tmimtinternationaljournal.com/wp-content/uploads/2025/04/Lakshay-Mohit-Ayush-Delegates.pdf"
+      },
+      {
         "date": "July 2024",
-        "title": "2nd place in the Sparrowthon - GenAI Hackathon",
+        "title": "2nd place in Sparrowthon",
         "issue": "Techdome Solutions",
-        "link": ""
+        "link": "https://techdome.io/"
       },
       {
         "date": "June 2024",
         "title": "Won the Tech Symposium’24",
-        "issue": "INDIAN SOCIETY FOR TECHNICAL EDUCATION [ISTE]",
-        "link": ""
+        "issue": "ISTE AKGEC",
+        "link": "http://www.isteonline.in/"
       },
       {
         "date": "April 2024",
-        "title": "Research Paper Publication: Enhancing Crop Yield Using Advanced Machine Learning Recommendations",
+        "title": "Research Paper Publication",
         "issue": "IEEE Xplore",
         "link": "https://ieeexplore.ieee.org/document/10486069"
       },
@@ -170,10 +176,28 @@
         "link": "https://www.udemy.com/certificate/UC-1e5a692e-dd41-4a58-86c9-076beef61e8e/"
       },
       {
+        "date": "November 2023",
+        "title": "Speaker and Organizer at Convolute’23 - Deep Learning event",
+        "issue": "MLCOE AKGEC",
+        "link": ""
+      },
+      {
+        "date": "October 2023",
+        "title": "3rd Prize at Ideathon’23",
+        "issue": "CSI AKGEC",
+        "link": ""
+      },
+      {
         "date": "October 2023",
         "title": "Deep Learning A-Z™: Neural Networks, AI",
         "issue": "Udemy",
         "link": "https://www.udemy.com/certificate/UC-a5007d08-ae9d-4808-b176-f542c5935319/"
+      },
+      {
+        "date": "September 2023",
+        "title": "Finalist at Amity Ideathon’23",
+        "issue": "Amity University",
+        "link": ""
       },
       {
         "date": "September 2023",
