@@ -4,6 +4,7 @@ import { FiDownload } from "react-icons/fi";
 import Typewriter from "typewriter-effect";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import portfolioData from "@/data/portfolio.json";
 
 // Components
 import Stats from "@/components/Stats";
@@ -32,16 +33,7 @@ export default function Home() {
                 {/* Typewriter */}
                 <Typewriter
                   options={{
-                    strings: [
-                      "Developer",
-                      "Machine Learning Enthusiast",
-                      "Backend Specialist",
-                      "Cloud Practitioner",
-                      "Innovator",
-                      "Tech Enthusiast",
-                      "Problem Solver",
-                      "Learner",
-                    ],
+                    strings: portfolioData.home.typewriterStrings,
                     autoStart: true,
                     loop: true,
                   }}
@@ -59,7 +51,7 @@ export default function Home() {
             </p>
             {/* Buttons and Socials */}
             <div className="flex flex-col xl:flex-row items-center gap-8">
-              <Link href="https://drive.google.com/file/d/1aeXCd3ycwtyfndCQrIX9abUlEWEIX6T0/view?usp=drive_link/">
+              <Link href={portfolioData.home.resumeLink}>
                 <Button
                   variant="outline"
                   size="lg"
