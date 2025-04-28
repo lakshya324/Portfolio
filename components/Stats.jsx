@@ -1,16 +1,9 @@
 "use client";
 
 import CountUp from "react-countup";
+import portfolioData from "@/data/portfolio.json";
 
-const stats = [
-  { title: "Projects Completed", count: 8 },
-  // { title: "Cups of Coffee", count: 100 },
-  // { title: "Clients", count: 10 },
-  { title: "Months of Experience", count: 6},
-  { title: "Languages", count: 7 },
-  { title: "Certifications", count: 23 },
-];
-//languages, months of experience, projects completed, line/commits of code,etc.
+const stats = portfolioData.stats;
 
 export default function Stats() {
   return (
