@@ -68,7 +68,7 @@ export default function Resume() {
                     {experience.items.map((item, index) => (
                       <li
                         key={index}
-                        className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1"
+                        className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1 group"
                       >
                         <span className="text-accent">{item.date}</span>
                         <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">
@@ -78,9 +78,9 @@ export default function Resume() {
                           <span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
                           {item.link ? (
                             <Link href={item.link} target="_blank" rel="noopener noreferrer">
-                              <p className="text-white/60 hover:underline hover:text-accent/80">
+                              <p className="flex text-white/60 hover:underline hover:text-accent/80">
                                 {item.company}
-                                <BsArrowUpRight className="ml-1 inline" />
+                                <BsArrowUpRight className="ml-1 mt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200" />
                               </p>
                             </Link>
                           ) : (
@@ -176,12 +176,16 @@ export default function Resume() {
                         </h3>
                         <div className="flex items-center gap-3">
                           <span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
-                          <Link href={item.link}>
-                            <p className="flex text-white/60 hover:underline hover:text-accent/80">
-                              {item.issue}
-                              <BsArrowUpRight className="ml-1 mt-2 opacity-0 group-hover:opacity-100" />
-                            </p>
-                          </Link>
+                          {item.link ? (
+                            <Link href={item.link} target="_blank" rel="noopener noreferrer">
+                              <p className="flex text-white/60 hover:underline hover:text-accent/80">
+                                {item.issue}
+                                <BsArrowUpRight className="ml-1 mt-2 opacity-0 group-hover:opacity-100" />
+                              </p>
+                            </Link>
+                          ) : (
+                            <p className="text-white/60">{item.issue}</p>
+                          )}
                         </div>
                       </li>
                     ))}
