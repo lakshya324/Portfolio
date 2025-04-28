@@ -8,6 +8,7 @@ import "swiper/css";
 
 import { BsGithub } from "react-icons/bs";
 import {IoIosRocket} from "react-icons/io";
+import { Autoplay } from "swiper/modules";
 
 import {
   Tooltip,
@@ -99,28 +100,35 @@ const Work = () => {
           {/* Slider */}
           <div className="w-full xl:w-[50%]">
             <Swiper
+              modules={[Autoplay]}
               spaceBetween={30}
               slidesPerView={1}
+              loop={true}
+              autoplay={{ delay: 3500, disableOnInteraction: false }}
               className="xl:h-[520px] mb-12"
               onSlideChange={(swiper) => {
                 // updating projects on slide change
-                setProject(projects[swiper.activeIndex]);
+                setProject(projects[swiper.realIndex]);
               }}
             >
               {projects.map((project, index) => {
                 return (
                   <SwiperSlide key={index} className="w-full">
-                    <div className="h-[460px] relative group flex justify-center items-center bg-pink-50/20">
+                    <div className="h-[460px] relative group flex justify-center items-center bg-pink-50/20 transition-all duration-500">
                       {/* Overlay */}
                       <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10"></div>
                       {/* Image */}
-                      <div className="relative w-full h-full">
+                      <div className="relative w-full h-full flex justify-center items-center">
                         <Image
                           src={project.image}
                           fill
-                          className="object-cover"
+                          className="object-cover transition-transform duration-500 group-hover:scale-105 group-hover:shadow-2xl"
                           alt=""
                         />
+                      </div>
+                      {/* Active slide effect */}
+                      <div className="absolute inset-0 pointer-events-none z-20">
+                        {/* Swiper will add 'swiper-slide-active' to the active slide */}
                       </div>
                     </div>
                   </SwiperSlide>
