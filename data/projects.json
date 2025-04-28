@@ -1,0 +1,47 @@
+[
+  {
+    "num": "01",
+    "title": "Veda AI",
+    "desc": "Empowering educational institutions with cutting-edge GenAI solutions. Built a suite of AI-powered tools for students, teachers, and schools, including AI psychometric reports, AI quizzer, 24/7 AI tutor, and more. Led backend and AI development.",
+    "stack": ["Next.js", "Python", "FastAPI", "AWS", "LangChain", "LLM"],
+    "image": "/assets/work/vedaai.png",
+    "live": "https://myvedaai.com/",
+    "github": "https://github.com/VedaLabs"
+  },
+  {
+    "num": "02",
+    "title": "GetItWrite",
+    "desc": "Contributed to ML and backend, enabling users to mimic famous authors’ writing styles. Developed AI models for text generation and style transfer.",
+    "stack": ["Next.js", "Python", "Flask", "NLP", "Machine Learning"],
+    "image": "/assets/work/getitwrite.png",
+    "live": "https://www.getitwrite.in/",
+    "github": ""
+  },
+  {
+    "num": "03",
+    "title": "DocSense",
+    "desc": "AI-powered smart PDF comparison and analysis tool. Built interactive PDF querying using a locally deployed LLAMA3 8B LLM model, vectorization, and real-time chatbot functionality.",
+    "stack": ["Python", "ChromaDB", "LLM", "LangChain", "Streamlit"],
+    "image": "/assets/work/docsense.png",
+    "live": "https://docsense-prototype.streamlit.app/",
+    "github": "https://github.com/lakshya324/DocSense"
+  },
+  {
+    "num": "04",
+    "title": "Watch the Drop [WTD]",
+    "desc": "Led to 3rd place in the 24-hour hackathon at IIT Jodhpur, our team developed a full-stack application for product tracking and price analysis across multiple e-commerce platforms. Built an RNN model for price prediction, integrated a chatbot for real-time product recommendations, and conducted web scraping from major sites like Amazon and Flipkart.",
+    "stack": ["Next.js 14", "Python", "Flask", "ML", "Web Scraping"],
+    "image": "/assets/work/watchthedrop.png",
+    "live": "https://watch-the-drop-v2.vercel.app/",
+    "github": "https://github.com/lakshya324/Watch-The-Drop"
+  },
+  {
+    "num": "05",
+    "title": "AgroSync",
+    "desc": "Contributed to ML and backend for an AI-driven agricultural insights platform. Connected farmers and consumers, included chat, chatbot, and crop grading ML.",
+    "stack": ["React.js", "Node.js", "MongoDB", "Flask", "Deep Learning"],
+    "image": "/assets/work/agrosync.png",
+    "live": "https://agrosync-prototype.vercel.app/",
+    "github": "https://github.com/lakshya324/AgroSync"
+  }
+]

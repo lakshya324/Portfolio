@@ -20,27 +20,7 @@ import WorkSliderNav from "@/components/WorkSliderNav";
 import Link from "next/link";
 import Image from "next/image";
 
-const projects = [
-  {
-    num: "01",
-    title: "Watch the Drop [WTD]",
-    desc: "Team project developed during a 24-hour hackathon at IIT Jodhpur and led us to victory, my team successfully created a full-stack application that tracked prices from multiple e-commerce websites like Amazon and Flipkart. This project also leveraged the power of ML models to predict future prices.",
-    stack: [{name:"Next.js 14"},{name:"Tailwind"},{name:"Typescript"}, {name:"Machine Learning"}, {name:"Web Scraping"}],
-    image: "/assets/work/p1.png",
-    live: "https://watch-the-drop-v2.vercel.app/",
-    github: "https://github.com/lakshya324/Watch-The-Drop",
-  },
-  {
-    num: "02",
-    title: "AgroSync",
-    desc: "AgroSync is a team project that connects farmers and consumers through an Interactive platform. It lets farmers list crops and lets users purchase directly from the farmer without any brokerage. The platform includes a chat function, a chatbot for user support, and machine learning for crop grading, ensuring quality.",
-    stack: [{name:"React.js"},{name:"Node.js"},{name:"MongoDB"}, {name:"Flask"}, {name:"Deep Learning"}],
-    image: "/assets/work/p2.png",
-    live: "https://agrosync-prototype.vercel.app/",
-    github: "https://github.com/lakshya324/AgroSync",
-  },
-  
-];
+import projects from "@/data/projects.json";
 
 const Work = () => {
   const [project, setProject] = useState(projects[0]);
@@ -76,7 +56,7 @@ const Work = () => {
                 {project.stack.map((stack, index) => {
                   return (
                     <li key={index} className="text-sm text-accent">
-                      {stack.name}
+                      {stack}
                       {/* removing extra comma at last */}
                       {index < project.stack.length - 1 && ","}
                     </li>
