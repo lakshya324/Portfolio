@@ -1,0 +1,22 @@
+[
+  {
+    "icon": "FaWhatsapp",
+    "title": "Phone",
+    "value": "+91 90585 90400"
+  },
+  {
+    "icon": "FaPhoneAlt",
+    "title": "Phone",
+    "value": "91 90585 90400 / +91 86306 19142"
+  },
+  {
+    "icon": "FaEnvelope",
+    "title": "Email",
+    "value": "lakshya.off31@gmail.com"
+  },
+  {
+    "icon": "FaMapMarkedAlt",
+    "title": "Address",
+    "value": "Ghaziabad, India"
+  }
+]

@@ -1,6 +1,7 @@
 "use client";
 
-import { FaPhoneAlt, FaEnvelope, FaMapMarkedAlt,FaWhatsapp } from "react-icons/fa";
+import contactInfo from "@/data/contact.json";
+import { FaPhoneAlt, FaEnvelope, FaMapMarkedAlt, FaWhatsapp } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { useState } from "react";
 
@@ -18,28 +19,13 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 
-const info = [
-  {
-    icon: <FaWhatsapp />,
-    title: "Phone",
-    value: "+91 90585 90400",
-  },
-  {
-    icon: <FaPhoneAlt />,
-    title: "Phone",
-    value: "+91 86306 19142",
-  },
-  {
-    icon: <FaEnvelope />,
-    title: "Email",
-    value: "lakshya.off31@gmail.com",
-  },
-  {
-    icon: <FaMapMarkedAlt />,
-    title: "Address",
-    value: "Ghaziabad, India",
-  },
-];
+// Icon mapping for contact
+const contactIcons = {
+  FaPhoneAlt,
+  FaEnvelope,
+  FaMapMarkedAlt,
+  FaWhatsapp,
+};
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -168,11 +154,12 @@ const Contact = () => {
           {/* Info */}
           <div className="flex-1 flex items-center xl:justify-end order-1 xl:order-none mb-8 xl:mb-0">
             <ul className="flex flex-col gap-10">
-              {info.map((item, index) => {
+              {contactInfo.map((item, index) => {
+                const Icon = contactIcons[item.icon] || null;
                 return (
                   <li key={index} className="flex items-center gap-6">
                     <div className="w-[52px] h-[52px] xl:w-[72px] xl:h-[72px] bg-[#27272c] text-accent rounded-md flex items-center justify-center">
-                      <div className="text-[28px]">{item.icon}</div>
+                      <div className="text-[28px]">{Icon ? <Icon /> : null}</div>
                     </div>
                     <div className="flex-1">
                       <p className="text-white/60">{item.title}</p>
